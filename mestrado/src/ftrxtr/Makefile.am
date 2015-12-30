@@ -21,4 +21,4 @@ libftrxtr_a_SOURCES = s_smptypes.h \
   s_cepstrum.c
 #libftrxtr_a_LIBADD = $(top_builddir)/incstat/libincstat.a \
 #  $(top_builddir)/strutils/libstrutils.a
-CFLAGS = -ansi -Wall -Werror -ggdb
+AM_CFLAGS = -std=c89 -Wall -Werror -ggdb

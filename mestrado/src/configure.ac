@@ -1,9 +1,11 @@
 dnl Process this file with autoconf to produce a configure script.
+AC_INIT(mestrado,0.1)
 
-AC_INIT(mfcc.c)
 AC_CONFIG_AUX_DIR(config)
-AM_INIT_AUTOMAKE(mfcc, 0.0)
-AM_INIT_AUTOMAKE(som_vq, 0.0)
+AC_CONFIG_SRCDIR(mfcc.c)
+AC_CONFIG_SRCDIR(som_vq.c)
+
+AM_INIT_AUTOMAKE
 
 dnl Checks for programs.
 AC_PROG_CC

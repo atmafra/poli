@@ -30,4 +30,4 @@ $(top_builddir)/incstat/libincstat.a \
 $(top_builddir)/function/libfunction.a \
 $(top_builddir)/inparse/libinparse.a
 
-AM_CFLAGS = -ansi -Wall -Werror -ggdb
+AM_CFLAGS = -std=c89 -Wall -Werror -ggdb

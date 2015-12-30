@@ -24,4 +24,4 @@ libnnet_a_SOURCES = \
   nnet_files.c \
   nnet_files_nnet.h \
   nnet_files_nnet.c
-AM_CFLAGS = -ansi -Wall -Werror -ggdb
+AM_CFLAGS = -std=c89 -Wall -Werror -ggdb
