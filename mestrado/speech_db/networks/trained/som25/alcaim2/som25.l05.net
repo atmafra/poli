@@ -1,0 +1,7501 @@
+<neural network>
+  neural network name: SOM 25 CLASSES - Eduardo Alberto Corrêa Fullen
+  neural network extension: SOM
+</neural network>
+
+<som extension>
+  neighborhood function: Gaussian
+  neighborhood function parameters: 3 0.000000 5.000000 20.000000
+  learning rate function: Exponential Decay
+  learning rate function parameters: 2 0.100000 1000.000000
+</som extension>
+
+<layer>
+  layer name: Camada de Entrada
+  layer index: 1
+  layer class: Input
+  layer default units: 0
+  activation class: Pass-through
+</layer>
+
+<layer>
+  layer name: Camada de Saída
+  layer index: 2
+  layer class: Output
+  layer default units: 0
+  activation class: Linear
+</layer>
+
+<unit>
+  layer index: 1
+  unit index: 1
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 2
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 3
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 4
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 5
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 6
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 7
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 8
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 9
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 10
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 11
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 12
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 13
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 14
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 15
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 16
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 17
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 18
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 19
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 20
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 21
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 22
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 23
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 24
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 25
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 26
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 27
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 1
+  unit index: 28
+  activation class: Pass-through
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 1
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 0.000000 0.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 2
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 1.000000 0.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 3
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 2.000000 0.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 4
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 3.000000 0.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 5
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 4.000000 0.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 6
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 0.000000 1.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 7
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 1.000000 1.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 8
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 2.000000 1.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 9
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 3.000000 1.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 10
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 4.000000 1.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 11
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 0.000000 2.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 12
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 1.000000 2.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 13
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 2.000000 2.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 14
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 3.000000 2.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 15
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 4.000000 2.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 16
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 0.000000 3.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 17
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 1.000000 3.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 18
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 2.000000 3.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 19
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 3.000000 3.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 20
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 4.000000 3.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 21
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 0.000000 4.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 22
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 1.000000 4.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 23
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 2.000000 4.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 24
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 3.000000 4.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<unit>
+  layer index: 2
+  unit index: 25
+  activation class: Linear
+  activation parameters: 2 1.000000 0.000000
+  coordinates: 2 4.000000 4.000000
+  average: 0.000000
+  standard deviation: 0.000000
+</unit>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 1
+  weight: 1.167304
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 1
+  weight: 1.377355
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.525631
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.456449
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.113115
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.220752
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.924304
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 1
+  weight: -1.962134
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 1
+  weight: -1.479460
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.001533
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.308545
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.334012
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.734399
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.595352
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.062652
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.086296
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.110952
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.007690
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.002911
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.188430
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.275454
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.128235
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.297288
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.040806
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.352782
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 1
+  weight: -0.008242
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.432815
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 1
+  weight: 0.198963
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.369104
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.629519
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 2
+  weight: 1.116896
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 2
+  weight: 1.191412
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 2
+  weight: 1.442521
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.876935
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.144618
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.984102
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 2
+  weight: -1.658769
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 2
+  weight: -1.347214
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.194624
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.507580
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.846764
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.188299
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.168488
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.212924
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.125993
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.005207
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.028735
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.149504
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.134751
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 2
+  weight: -0.056141
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.015580
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.208779
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.276459
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.291088
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.110092
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 2
+  weight: 0.024762
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.565313
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.769930
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.618800
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.391222
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.548765
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.319859
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.157141
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.757746
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 3
+  weight: -1.028994
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.407345
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.871309
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 3
+  weight: 1.053109
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.251698
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.416095
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.395267
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 3
+  weight: 1.108352
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 3
+  weight: 1.103287
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.668198
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.176627
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 3
+  weight: 2.170860
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.972225
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 3
+  weight: -1.615216
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 3
+  weight: -1.922785
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.254553
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 3
+  weight: 1.111879
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 3
+  weight: 0.262225
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 3
+  weight: -0.186351
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 3
+  weight: 1.111708
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.869070
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.262098
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 4
+  weight: -2.196153
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.805687
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 4
+  weight: 1.438789
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 4
+  weight: -1.132160
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.138708
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.342427
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.778952
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.789158
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.660215
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.409136
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.114617
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 4
+  weight: -1.326313
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.147735
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.711469
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.938279
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 4
+  weight: -1.341836
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.703361
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.671046
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.029504
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.620007
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.030841
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.267181
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 4
+  weight: 1.226689
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.675800
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 4
+  weight: -0.064870
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 4
+  weight: 0.070883
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.876641
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.631091
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 5
+  weight: -2.671179
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 5
+  weight: 1.443419
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 5
+  weight: 1.618203
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 5
+  weight: -1.367073
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.578768
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.562121
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 5
+  weight: 1.152812
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 5
+  weight: 1.251944
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 5
+  weight: -1.754722
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.179452
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.283021
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.821856
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.200100
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.070449
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.182966
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.546682
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.186472
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.403353
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.367513
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.305925
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.317432
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.263939
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.092669
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.058628
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 5
+  weight: 0.060706
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 5
+  weight: -0.311766
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 6
+  weight: 1.025035
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 6
+  weight: 1.140946
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.136776
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 6
+  weight: -1.266078
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.258172
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.778142
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.747214
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.167633
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.369468
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 6
+  weight: 1.296247
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.433847
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 6
+  weight: -1.110713
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 6
+  weight: -1.570750
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 6
+  weight: -1.193359
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.018390
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.043323
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.012502
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.193555
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.133038
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.069645
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.304023
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.245359
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.049343
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.027645
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 6
+  weight: 0.081666
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.253856
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.257015
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 6
+  weight: -0.096015
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.906424
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 7
+  weight: 1.080144
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.209341
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.319732
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.418180
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.722989
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.364045
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.542618
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 7
+  weight: -1.014439
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.491395
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 7
+  weight: 2.294443
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 7
+  weight: 1.826999
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.229420
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.341295
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.296435
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.304231
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.071354
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.286496
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.032955
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.121652
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.222784
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.052596
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.325675
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.609248
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 7
+  weight: 0.423070
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.055425
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.221332
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 7
+  weight: -0.131681
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.663655
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.508689
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.667853
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.484863
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.723096
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.433982
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.609012
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.007387
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.836915
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.222321
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.022448
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.297225
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.129433
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.257254
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.673124
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.660683
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.491056
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 8
+  weight: -1.055914
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.479914
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.698460
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.197596
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.022353
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.032450
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.241368
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 8
+  weight: 1.379682
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.679320
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 8
+  weight: -0.908232
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 8
+  weight: 0.266994
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.403789
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.522234
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 9
+  weight: -1.807850
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.056982
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.843184
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.822793
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.125960
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.336487
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.655418
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.403887
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.308578
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.304822
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.009871
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.887513
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.144928
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.124961
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.057468
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.026207
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.097262
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.027787
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.173099
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.158191
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.001894
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.017811
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.065317
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 9
+  weight: -0.067830
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.157648
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 9
+  weight: 0.228124
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.580292
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.091533
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 10
+  weight: -1.217155
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.585698
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 10
+  weight: 1.767174
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.316980
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.384919
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.389821
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 10
+  weight: 1.109467
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 10
+  weight: 1.099890
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.044822
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.074371
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.009283
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.660103
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.484920
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 10
+  weight: -1.379943
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 10
+  weight: -2.622144
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 10
+  weight: 1.556390
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 10
+  weight: 1.672883
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 10
+  weight: -1.473746
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.757112
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.802127
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.196657
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 10
+  weight: 0.621475
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 10
+  weight: -1.216041
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.368865
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.191868
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 10
+  weight: -0.721392
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.913219
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 11
+  weight: 1.004062
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.308464
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 11
+  weight: -1.534386
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.281298
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 11
+  weight: 1.671585
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 11
+  weight: 1.759039
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.421451
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.090789
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.471206
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.075644
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 11
+  weight: -1.394286
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 11
+  weight: -1.031675
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.494645
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.182313
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.342138
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.402800
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.252627
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.266472
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.620156
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.774868
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.008994
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.463360
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.531713
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 11
+  weight: -0.403986
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 11
+  weight: 0.216710
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 11
+  weight: 1.103317
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 11
+  weight: 1.021583
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.652876
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.683434
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.393997
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 12
+  weight: -1.493669
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.263745
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 12
+  weight: 1.767295
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 12
+  weight: 2.134969
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.253053
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.612245
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.323933
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.705355
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.582760
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.568126
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.984231
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.136945
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.162220
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.044192
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.017380
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.020449
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.090828
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.125363
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.113565
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.273061
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.173072
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 12
+  weight: 0.093823
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.020548
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.303395
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 12
+  weight: -0.215682
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.811156
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 13
+  weight: 1.134374
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.636013
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.670443
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.192399
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.615172
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.141878
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.689799
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.557616
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.481025
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 13
+  weight: 1.015099
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.410344
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.592122
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.441408
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 13
+  weight: 1.026943
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 13
+  weight: 1.054048
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.167387
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 13
+  weight: -1.067136
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.296166
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 13
+  weight: 1.004703
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.045071
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 13
+  weight: -1.399956
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.986745
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.540686
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 13
+  weight: 0.356179
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 13
+  weight: -1.095755
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 13
+  weight: -1.478893
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 13
+  weight: -0.809073
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.122494
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.243999
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.355932
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.031147
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.085015
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.268076
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.165597
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.369834
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.584117
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.051939
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.233364
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.334210
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.352567
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.151910
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 14
+  weight: 2.958708
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 14
+  weight: 2.058977
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 14
+  weight: -2.089040
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 14
+  weight: -1.369184
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 14
+  weight: 1.392357
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.788809
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.640106
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.219715
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.173424
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.580553
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.107694
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 14
+  weight: 0.359678
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 14
+  weight: -0.458675
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 14
+  weight: -1.342583
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.383613
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.381284
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.204280
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 15
+  weight: 1.002521
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.222657
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.633330
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.710942
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.319818
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.303699
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.800160
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.467724
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.349599
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.238985
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.025947
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 15
+  weight: 2.267522
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 15
+  weight: 2.346182
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.231331
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 15
+  weight: 0.832677
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 15
+  weight: 1.295789
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.195023
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.888486
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 15
+  weight: -1.207932
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 15
+  weight: -1.132516
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.832066
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.618084
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.189481
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.388029
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 15
+  weight: -0.492465
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.673001
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.822795
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.023631
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 16
+  weight: -1.020626
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.139067
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.917896
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.984870
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.341383
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.530809
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 16
+  weight: 1.229060
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.730038
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.607222
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.966112
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.320116
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 16
+  weight: -1.164494
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 16
+  weight: -1.264548
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.235586
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 16
+  weight: 1.308361
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.111043
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 16
+  weight: -1.348766
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 16
+  weight: -1.468575
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.031386
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.303444
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.470236
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 16
+  weight: -0.054870
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 16
+  weight: 1.006653
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.751066
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 16
+  weight: 0.137516
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.103023
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.300337
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.734160
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.229295
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.334515
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.200877
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.399638
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.235356
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.375647
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.195460
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.178770
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.300326
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 17
+  weight: 1.052812
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 17
+  weight: 1.028259
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.075950
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.075242
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.001609
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.166463
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.475920
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.056655
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.297083
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.193180
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.258747
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.186655
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.059912
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.114765
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 17
+  weight: -0.124446
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 17
+  weight: 0.019115
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.190504
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.244036
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 18
+  weight: -1.001933
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.244444
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.170424
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 18
+  weight: -1.104369
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.779106
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.069064
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.389514
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.517739
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.104282
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.682940
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.305761
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.513951
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 18
+  weight: -1.238055
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.042448
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 18
+  weight: 2.371428
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.433365
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.084741
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 18
+  weight: 1.004782
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.264605
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.469288
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 18
+  weight: -1.412713
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 18
+  weight: -1.880244
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.117763
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.625669
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 18
+  weight: -0.133253
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 18
+  weight: 0.825967
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 19
+  weight: -1.263247
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 19
+  weight: -1.129416
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.169969
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.642978
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.560677
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.714604
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.365972
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.567989
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.394266
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.462946
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.513993
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.059523
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.637260
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.106931
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.748943
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.466107
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.439886
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.171113
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.150649
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.243818
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.300373
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.012137
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.713751
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 19
+  weight: 1.068465
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.041142
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 19
+  weight: 0.116263
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 19
+  weight: -0.983702
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 19
+  weight: -1.582643
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 20
+  weight: -1.136495
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 20
+  weight: -1.070119
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.175420
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.338628
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.289659
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.432164
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.730933
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.062729
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.107842
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.691143
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.501296
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.177380
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.528975
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.468749
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.008103
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.025604
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.036958
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.091840
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.192695
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.156423
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.109950
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.337565
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.621906
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.431665
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.129733
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.031457
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 20
+  weight: -0.126514
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 20
+  weight: 0.115471
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.419150
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.685026
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.555824
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.417454
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.441426
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.362391
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.519017
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.242622
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.020131
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.397100
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.888135
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.679062
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.187151
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.238500
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 21
+  weight: -1.244869
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 21
+  weight: -1.166078
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.382679
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 21
+  weight: 1.012411
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.746403
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 21
+  weight: -1.508693
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.323219
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 21
+  weight: 1.551619
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 21
+  weight: 1.214611
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 21
+  weight: -0.832774
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 21
+  weight: -1.285072
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.480113
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 21
+  weight: 1.768388
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 21
+  weight: 0.813023
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.192961
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.080469
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.414015
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.689474
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.324506
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.310289
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.715737
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.106903
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.432567
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.136406
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.484936
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.269387
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.394469
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.356734
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 22
+  weight: -1.271958
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 22
+  weight: -1.724204
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.926309
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.073643
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.441660
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 22
+  weight: -1.000946
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.030740
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 22
+  weight: 1.442294
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 22
+  weight: 1.102190
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.034771
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.000030
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.682580
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 22
+  weight: 0.512828
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 22
+  weight: -0.368621
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 23
+  weight: -1.124681
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 23
+  weight: -1.006107
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.212964
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.390717
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.764795
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.640714
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.455655
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.379692
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.270232
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.423917
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.291372
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.293910
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.024784
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.018370
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.026319
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.011736
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.054333
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.162334
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.220922
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.127816
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 23
+  weight: -0.087259
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.306067
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.672568
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.526695
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.431076
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.642439
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.368552
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 23
+  weight: 0.286668
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 24
+  weight: -1.197235
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 24
+  weight: -1.010996
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.355785
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.308390
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.674940
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.522041
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.604987
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.560989
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.527642
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.429620
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.093949
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.146400
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.536401
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.271218
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.061350
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.016885
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.019771
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.253806
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.534265
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.406207
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.359557
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.051564
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 24
+  weight: 0.066388
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.379517
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.633930
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.754755
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.483282
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 24
+  weight: -0.378513
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 1
+  destination layer index: 2
+  destination unit index: 25
+  weight: -1.156579
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 2
+  destination layer index: 2
+  destination unit index: 25
+  weight: -1.078771
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 3
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.265947
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 4
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.578639
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 5
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.709153
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 6
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.506484
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 7
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.176906
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 8
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.571811
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 9
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.521648
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 10
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.582123
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 11
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.672603
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 12
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.112476
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 13
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.289483
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 14
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.147893
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 15
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.128638
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 16
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.140322
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 17
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.176017
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 18
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.771033
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 19
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.381212
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 20
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.043004
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 21
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.511508
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 22
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.123657
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 23
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.273288
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 24
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.037182
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 25
+  destination layer index: 2
+  destination unit index: 25
+  weight: -0.160899
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 26
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.391137
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 27
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.437616
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
+
+<connection>
+  origin layer index: 1
+  origin unit index: 28
+  destination layer index: 2
+  destination unit index: 25
+  weight: 0.094747
+  initialization method: Gaussian Random
+  initialization parameters: 2 0.000000 0.005000
+</connection>
