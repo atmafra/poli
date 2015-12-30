@@ -1,0 +1,14 @@
+gcc -ansi -Wall -Werror -ggdb \
+../incstat/incstat.c \
+../function/function.c \
+../vector/vector.c \
+nnet_nnet.c \
+nnet_layers.c \
+nnet_actv.c \
+nnet_units.c \
+nnet_conns.c \
+nnet_weights.c \
+nnet_metrics.c \
+nnet_sets.c \
+teste.c \
+-lm -o teste

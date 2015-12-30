@@ -1,0 +1,3 @@
+gcc -ansi -Wall -Werror -ggdb \
+../vector/vector.o ../incstat/incstat.o \
+-lm matrix.c teste.c -o teste

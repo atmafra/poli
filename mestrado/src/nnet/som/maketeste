@@ -1,0 +1,14 @@
+#!/bin/bash
+gcc -ansi -Wall -Werror \
+nnet_som.c nnet_som_ngb.c \
+../../vector/vector.c ../../vector/vectorstat.c \
+../../matrix/matrix.c ../../trmap/trmap.c \
+../../function/function.c \
+../../incstat/incstat.c \
+../../strutils/strutils.c \
+../../inparse/inparse.c \
+../nnet_nnet.c ../nnet_layers.c ../nnet_units.c ../nnet_conns.c \
+../nnet_metrics.c ../nnet_actv.c ../nnet_weights.c \
+../nnet_sets.c ../nnet_train.c \
+../nnet_files.c ../nnet_files_nnet.c \
+somtest.c -lm -static -ansi -Wall -Werror -ggdb -o somtest

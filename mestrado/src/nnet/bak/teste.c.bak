@@ -1,0 +1,598 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "nnet_types.h"
+#include "nnet_nnet.h"
+#include "nnet_actv.h"
+#include "nnet_layers.h"
+#include "nnet_units.h"
+#include "nnet_conns.h"
+#include "nnet_weights.h"
+#include "nnet_metrics.h"
+
+int
+main ()
+{
+  int exit_status;
+
+  /*
+     nnet_unit_value_type act;
+     nnet_actv_type *sigmoidal;
+     nnet_unit_value_type new_sigmoidal_parameters[] = { 2.0, 2.0, 0.0, 1.0 };
+   */
+
+  NNetwork rede;
+
+  Layer input_layer;
+  /*Layer hidden_layer;*/
+  Layer output_layer;
+
+  Unit winner;
+
+  InputOutput io;
+
+  /*
+     Unit unit1, unit2;
+     Connection conn1, conn2;
+   */
+
+  /*
+     Unit unid;
+   */
+
+  /*
+     nnet_unit_index_type i;
+     nnet_layer_index_type j;
+   */
+
+/******************************************************************************/
+
+  nnet_actv_init_all_classes ();
+
+  /*
+     nnet_actv_class_info (nnet_actv_class_passthrough, stdout);
+     puts ("");
+     nnet_actv_class_info (nnet_actv_class_threshold, stdout);
+     puts ("");
+     nnet_actv_class_info (nnet_actv_class_linear, stdout);
+     puts ("");
+     nnet_actv_class_info (nnet_actv_class_pcwlinear, stdout);
+     puts ("");
+     nnet_actv_class_info (nnet_actv_class_sigmoidal, stdout);
+     puts ("");
+     nnet_actv_class_info (nnet_actv_class_tanh, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  exit_status = nnet_wght_init_all_classes ();
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau inicializando as funcoes de peso\n");
+      return EXIT_FAILURE;
+    }
+
+/******************************************************************************/
+
+  /*
+     sigmoidal = nnet_actv_create_function (&nnet_actv_class_sigmoidal);
+
+     printf ("sigmoidal com parametros default:\n");
+
+     for (act = -1.0; act <= 1.0; act += 0.1)
+     {
+     printf ("sigmoidal(%f) = %f\n", act,
+     nnet_actv_value (sigmoidal, act));
+     }
+
+     nnet_actv_set_parameters (sigmoidal, new_sigmoidal_parameters);
+
+     printf ("\nsigmoidal com parametros setados:\n");
+
+     for (act = -1.0; act <= 1.0; act += 0.1)
+     {
+     printf ("sigmoidal(%f) = %f\n", act,
+     nnet_actv_value (sigmoidal, act));
+     }
+
+     nnet_actv_destroy_function (&sigmoidal);
+   */
+
+/******************************************************************************/
+
+  nnet_layer_init_all_classes ();
+
+  /*
+     nnet_layer_class_info (nnet_layer_class_input, stdout);
+     puts ("");
+     nnet_layer_class_info (nnet_layer_class_hidden, stdout);
+     puts ("");
+     nnet_layer_class_info (nnet_layer_class_output, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  rede = nnet_nnetwork_create ("Rede Teste");
+
+  /*
+     puts ("");
+     nnet_nnetwork_info (*rede, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  input_layer =
+    nnet_layer_create (rede, NULL, &nnet_layer_class_input, "Entrada");
+
+  /*
+  hidden_layer =
+    nnet_layer_create (rede, NULL, &nnet_layer_class_hidden, "Oculta");
+  */
+
+  output_layer =
+    nnet_layer_create (rede, NULL, &nnet_layer_class_output, "Saída");
+
+  /*
+     puts ("");
+     printf ("input = %p\n", input_layer);
+     printf ("hidden = %p\n", hidden_layer);
+     printf ("output = %p\n", output_layer);
+     puts ("");
+   */
+
+  /*
+     puts ("\n ### REDE SO COM AS CAMADAS ###\n");
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  exit_status =
+    nnet_unit_create_multiple (3, input_layer, NULL, NULL, TRUE, TRUE);
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau criando unidades na camada de entrada\n");
+      return EXIT_FAILURE;
+    }
+
+  /*
+  exit_status =
+    nnet_unit_create_multiple (10, hidden_layer, NULL, NULL, TRUE, TRUE);
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau criando unidades na camada oculta\n");
+      return EXIT_FAILURE;
+    }
+    */
+
+  exit_status =
+    nnet_unit_create_multiple (5, output_layer, NULL, NULL, TRUE, TRUE);
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau criando unidades na camada de saída\n");
+      return EXIT_FAILURE;
+    }
+
+  /*
+     puts ("\n### REDE INICIAL ###");
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     i = 3;
+
+     unid = nnet_unit_create (input_layer, &i, NULL, NULL, FALSE, TRUE, TRUE);
+
+     if (unid == NULL)
+     {
+     fprintf (stderr, "deu pau criando a unidade\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("#####  ANTES  #####");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+  /*
+     exit_status = nnet_unit_destroy (&unid);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau destruindo a unidade\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("#####  DEPOIS  #####");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     i = 3;
+
+     unid = nnet_unit_create (input_layer, &i, NULL, NULL, FALSE, TRUE, TRUE);
+
+     if (unid == NULL)
+     {
+     fprintf (stderr, "deu pau criando a unidade\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("#####  ANTES  #####");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+  /*
+     exit_status = nnet_unit_attach_to_layer (unid, hidden_layer, NULL);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau trocando de camada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("#####  DEPOIS  #####");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     printf ("hidden layer antes = %p\n", hidden_layer);
+   */
+
+  /*
+     exit_status = nnet_layer_destroy (&hidden_layer, TRUE);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "nao conseguiu destruir a camada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     printf ("hidden layer depois = %p\n", hidden_layer);
+   */
+
+  /*
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     unid =
+     nnet_unit_create (NULL, NULL, &nnet_actv_class_sigmoidal, NULL, FALSE,
+     FALSE, TRUE);
+
+     if (unid == NULL)
+     {
+     fprintf (stderr, "deu pau criando a unidade\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_unit_attach_to_layer (unid, input_layer, NULL);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau trocando de camada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_unit_remove_from_layer (unid);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau tirando da camada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+/******************************************************************************/
+
+  /*
+     i = 3;
+     exit_status = nnet_unit_attach_to_layer (unid, input_layer, &i);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau colocando na posicao 3 da entrada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+/******************************************************************************/
+
+  /*
+     i = 4;
+     exit_status = nnet_unit_attach_to_layer (unid, input_layer, &i);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau colocando na posicao 4 da entrada\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_layer_remove_from_nnetwork (output_layer);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau tirando a camada de saida da rede\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("\n### REDE ANTES ###");
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+
+/******************************************************************************/
+
+  /*
+     j = 1;
+     exit_status = nnet_layer_attach_to_nnetwork (output_layer, rede, &j);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr,
+     "deu pau grudando de volta a camada de saida na rede\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("\n### REDE DEPOIS ###");
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+
+/******************************************************************************/
+
+  /*
+     j = 2;
+     exit_status = nnet_layer_attach_to_nnetwork (output_layer, rede, &j);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr,
+     "deu pau grudando de volta a camada de saida na rede\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("\n### REDE DEPOIS DE DEPOIS ###");
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     unit1 = input_layer->first_unit->next;
+     unit2 = hidden_layer->first_unit;
+
+     conn1 = nnet_conn_create (unit1, unit2, 2.0);
+
+     if (conn1 == NULL)
+     {
+     fprintf (stderr, "deu pau conectando as unidades 1 e 2\n");
+     return EXIT_FAILURE;
+     }
+
+     conn2 = nnet_conn_create (unit1, unit1, 3.0);
+
+     if (conn1 == NULL)
+     {
+     fprintf (stderr, "deu pau conectando as unidades 1 e 1\n");
+     return EXIT_FAILURE;
+     }
+   */
+
+  /*
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_conn_destroy (&conn2);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau desconectando a 1/1 da 1/1\n");
+     return EXIT_FAILURE;
+     }
+
+     exit_status = nnet_conn_destroy (&conn1);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau desconectando a 1/1 da 1/1\n");
+     return EXIT_FAILURE;
+     }
+
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_conn_disconnect_unit_inputs (unit1);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau desconectando as entradas da unidade 1\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("### DEPOIS ###");
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_conn_disconnect_unit_outputs (unit1);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau desconectando as saidas da unidade 1\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("### ANTES ###");
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+     exit_status = nnet_conn_disconnect_unit (unit1);
+
+     if (exit_status != EXIT_SUCCESS)
+     {
+     fprintf (stderr, "deu pau desconectando a unidade 1\n");
+     return EXIT_FAILURE;
+     }
+
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  exit_status = nnet_conn_connect_layers
+    (input_layer, output_layer, 0.0, nnet_wght_init_gaussian_random);
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau conectando a entrada com a oculta\n");
+      return EXIT_FAILURE;
+    }
+
+  /*
+  exit_status = nnet_conn_connect_layers
+    (hidden_layer, output_layer, 0.0, nnet_wght_init_uniform_random);
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau conectando a oculta com a saida\n");
+      return EXIT_FAILURE;
+    }
+    */
+
+  /*
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, TRUE, TRUE, stdout);
+     puts ("");
+   */
+
+/******************************************************************************/
+
+  /*
+  puts ("ativando oculta");
+  exit_status = nnet_unit_activate_layer (hidden_layer);
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau ativando a camada oculta\n");
+      return EXIT_FAILURE;
+    }
+    */
+
+  puts ("ativando saida");
+  exit_status = nnet_unit_activate_layer (output_layer);
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau ativando a camada de saída\n");
+      return EXIT_FAILURE;
+    }
+
+  puts ("ativou a rede");
+
+     puts ("");
+     nnet_nnetwork_info (rede, TRUE, TRUE, FALSE, FALSE, stdout);
+     puts ("");
+
+  winner = nnet_metr_layer_winner (output_layer);
+
+  if (winner == NULL)
+  {
+    fprintf (stderr, "deu pau achando o vencedor\n");
+    return EXIT_FAILURE;
+  }
+
+  printf ("Venceu a unidade %ld com saída %f\n", winner->layer_index, winner->output);
+
+/******************************************************************************/
+
+  exit_status = nnet_nnetwork_destroy (&rede, TRUE, TRUE, TRUE);
+
+  if (exit_status != EXIT_SUCCESS)
+    {
+      fprintf (stderr, "deu pau destruindo a rede\n");
+      return EXIT_FAILURE;
+    }
+
+/******************************************************************************/
+
+  /* um atexit ? */
+  nnet_actv_destroy_all_classes ();
+
+/******************************************************************************/
+
+  return 0;
+}
