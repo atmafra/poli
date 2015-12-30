@@ -66,10 +66,10 @@ typedef NFileSection NFile[];
  *                                                                            *
  ******************************************************************************/
 
-extern FILE *input_fd;          /* input file descriptor */
-extern int cur_section;         /* current section being processed */
-extern int cur_attr;            /* current section attribute */
-extern char buf[NNET_BUF_SIZE]; /* read buffer */
+extern FILE *input_fd;              /* input file descriptor */
+extern int cur_section;             /* current section being processed */
+extern UsIntValue cur_attr;         /* current section attribute */
+extern char buf[NNET_BUF_SIZE];     /* read buffer */
 
 
 

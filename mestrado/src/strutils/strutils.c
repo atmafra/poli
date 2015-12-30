@@ -96,7 +96,7 @@ split_file_name (char *file_name, char **directory,
   *extension = NULL;
 
   /* trivial case: empty file name */
-  if (file_name == (char *) NULL || len == 0)
+  if (file_name == (char *) NULL)
     return;
 
   /* another trivial case: file name is '\0' */
@@ -165,6 +165,10 @@ split_file_name (char *file_name, char **directory,
       else if (!bar_fl && !dot_fl && len > 0)
         {
           basename_size = len + 1;
+        }
+      else
+        {
+          basename_size = 0;
         }
       *basename = (char *) realloc (*basename, basename_size);
     }
@@ -639,7 +643,7 @@ display_progress (const long min, const long max, const long cur,
   if (cur < min || cur > max)
     {
       fprintf (stderr,
-               "display_progress: current value (%d) out of range (%d..%d)\n",
+               "display_progress: current value (%ld) out of range (%ld..%ld)\n",
                cur, min, max);
       return EXIT_FAILURE;
     }

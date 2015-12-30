@@ -29,17 +29,7 @@ function_class_create (RFunctionClass cls,
 
   /* Class function */
   cls->function = function;
-
-  if (nu_parameters < 0)
-    {
-      fprintf (stderr,
-               "function_class_create: negative number of parameters\n");
-      return EXIT_FAILURE;
-    }
-  else
-    {
-      cls->nu_parameters = nu_parameters;
-    }
+  cls->nu_parameters = nu_parameters;
 
   /* RFunction parameter names and default values */
   for (parm = 0; parm < nu_parameters; parm++)
@@ -211,8 +201,7 @@ function_set_parameter (RFunction function,
     }
 
   /* Checks if the parameter index is valid */
-  if (parameter_index < 0
-      || parameter_index >= function->function_class->nu_parameters)
+  if (parameter_index >= function->function_class->nu_parameters)
     {
       fprintf (stderr,
                "function_set_parameter: invalid parameter index: %d (function has %d parameters\n",
@@ -246,7 +235,7 @@ function_set_parameter_vector (RFunction function,
       if (exit_status != EXIT_SUCCESS)
         {
           fprintf (stderr,
-                   "function_set_parameter_vector: error setting parameter %d\n",
+                   "function_set_parameter_vector: error setting parameter %lu\n",
                    parm);
           return EXIT_FAILURE;
         }
@@ -275,7 +264,7 @@ function_class_info (const RFunctionClass function_class, FILE * output_fd)
 
   for (cur_param = 0; cur_param < function_class->nu_parameters; cur_param++)
     {
-      fprintf (output_fd, "    parameter %d: %s (default %f)\n", cur_param,
+      fprintf (output_fd, "    parameter %lu: %s (default %f)\n", cur_param,
                function_class->parameter_name[cur_param],
                function_class->parameter_default[cur_param]);
     }

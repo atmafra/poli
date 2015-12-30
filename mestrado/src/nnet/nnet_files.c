@@ -19,7 +19,7 @@
 
 FILE *input_fd;                 /* input file descriptor */
 int cur_section = -1;           /* current section being processed */
-int cur_attr = 0;               /* current section attribute */
+UsIntValue cur_attr = 0;        /* current section attribute */
 char buf[NNET_BUF_SIZE];        /* read buffer */
 
 

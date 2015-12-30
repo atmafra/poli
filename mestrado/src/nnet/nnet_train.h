@@ -25,7 +25,7 @@ extern LRateFunctionClass nnet_train_lrate_expdecay;
 
 
 /* Learning Rate function class names */
-extern const char nnet_train_lrate_class_name[][];
+extern const char * nnet_train_lrate_class_name[];
 
 
 

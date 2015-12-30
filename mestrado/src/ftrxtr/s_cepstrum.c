@@ -90,12 +90,14 @@ scep_mel_scale (const cmp_real delta_mel,
       return EXIT_FAILURE;
     }
 
+  /*
   if (total_filters < 0)
     {
       fprintf (stderr,
                "scep_mel_scale: negative number of filters requested\n");
       return EXIT_FAILURE;
     }
+   */
 
   if (filter > total_filters)
     {

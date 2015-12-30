@@ -527,14 +527,6 @@ apply_index_function (index_list_type * index, cmp_function function,
   int exit_status;              /* auxiliary function return status */
 
 
-  /* Validates the number of parameters passed */
-  if (parc < 0)
-    {
-      fprintf (stderr,
-               "apply_index_function: negative number of parameters requested\n");
-      return EXIT_FAILURE;
-    }
-
   /* Points cur to the header of the index */
   cur = index->head;
 
@@ -697,6 +689,7 @@ int
 resize_list (sample_list_type ** smp_list, const smp_num_samples samples)
 {
   /* Validates the number of samples requested */
+  /*
   if (samples < 0)
     {
       fprintf (stderr,
@@ -704,6 +697,7 @@ resize_list (sample_list_type ** smp_list, const smp_num_samples samples)
                samples);
       return EXIT_FAILURE;
     }
+   */
 
   if (samples > __SMP_MAX_SAMPLES_)
     {
@@ -772,11 +766,13 @@ get_list_value (const sample_list_type smp_list, const smp_num_samples pos,
                 cmp_complex * value)
 {
   /* Validates the interval for pos */
+  /*
   if (pos < 0)
     {
       fprintf (stderr, "get_list_value: negative position index requested\n");
       return EXIT_FAILURE;
     }
+   */
 
   if (pos > smp_list.samples)
     {
@@ -819,11 +815,13 @@ set_list_value (sample_list_type * smp_list, const smp_num_samples pos,
                 const cmp_complex value)
 {
   /* Validates the interval for pos */
+  /*
   if (pos < 0)
     {
       fprintf (stderr, "set_list_value: negative position index requested\n");
       return EXIT_FAILURE;
     }
+   */
 
   if (pos > smp_list->samples)
     {
@@ -1011,14 +1009,6 @@ apply_list_function (sample_list_type ** smp_list, cmp_function function,
   int exit_status = EXIT_FAILURE;
 
 
-
-  /* Validates the number of parameters passed */
-  if (parc < 0)
-    {
-      fprintf (stderr,
-               "apply_list_function: negative number of parameters requested\n");
-      return EXIT_FAILURE;
-    }
 
   /* Applies the function to all the elements of the list */
   for (cur_element = 1; cur_element <= (*smp_list)->samples; cur_element++)

@@ -170,11 +170,13 @@ func_integral (const double lower_bound, const double upper_bound,
     }
 
   /* Validates number of segments */
+  /*
   if (v_segments < 0)
     {
       error_status[__INT_ERROR_NOERROR] = FALSE;
       error_status[__INT_ERROR_SEGMENTS] = TRUE;
     }
+   */
 
   /* Validates integration method */
   switch (v_int_method)

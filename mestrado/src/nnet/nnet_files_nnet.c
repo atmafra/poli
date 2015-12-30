@@ -164,11 +164,11 @@ static int
 nnet_file_process_nnetwork ()
 {
   BoolValue end_of_section = FALSE;     /* end of section found */
-  CompositeUnion value;         /* current attribute value */
-  int exit_status;              /* auxiliary function return status */
+  CompositeUnion value;                 /* current attribute value */
+  int exit_status;                      /* auxiliary function return status */
 
-  Name nnet_name;               /* neural network name */
-  Name ext_name;                /* extension name */
+  Name nnet_name;                       /* neural network name */
+  Name ext_name;                        /* extension name */
 
   while (end_of_section == FALSE)
     {

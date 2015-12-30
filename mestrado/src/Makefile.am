@@ -17,13 +17,12 @@ $(top_builddir)/incstat/libincstat.a
 
 som_vq_SOURCES = som_vq.c
 som_vq_LDADD = \
+$(top_builddir)/nnet/libnnet.a \
 $(top_builddir)/nnet/som/libnnetsom.a \
-$(top_builddir)/nnet/lvq/libnnetlvq.a \
 $(top_builddir)/errorh/liberrorh.a \
 $(top_builddir)/strutils/libstrutils.a \
 $(top_builddir)/matrix/libmatrix.a \
 $(top_builddir)/table/libtable.a \
-$(top_builddir)/nnet/libnnet.a \
 $(top_builddir)/trmap/libtrmap.a \
 $(top_builddir)/vector/libvector.a \
 $(top_builddir)/incstat/libincstat.a \

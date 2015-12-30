@@ -31,11 +31,13 @@ sfft_sup_power (const smp_num_samples basis, const smp_num_samples x,
     }
 
   /* Checks the validity of 'x' */
+  /*
   if (x < 0)
     {
       fprintf (stderr, "sfft_sup_power: %ld is an invalid sample index\n", x);
       return EXIT_FAILURE;
     }
+   */
 
   /* Calculates the supreme of 'x' in the power series of 'basis' */
   aux_power = 1;
@@ -104,7 +106,8 @@ sfft_next_index (smp_bit_vector * bit_vector,
 
 
   /* Validates N_cur */
-  if (N_cur > N || N_cur < 0)
+  /*if (N_cur > N || N_cur < 0)*/
+  if (N_cur > N)
     {
       fprintf (stderr, "sfft_next_index: invalid exponent\n");
       return EXIT_FAILURE;
@@ -195,20 +198,24 @@ sfft_bit_reverse (const smp_num_samples index,
 
 
   /* Checks the validity of N */
+  /*
   if (N < 0)
     {
       fprintf (stderr, "sfft_bit_reverse: invalid N\n");
       *reversed_index = 0;
       return EXIT_FAILURE;
     }
+   */
 
   /* Checks the validity of the sample index */
+  /*
   if (index < 0)
     {
       fprintf (stderr, "sfft_bit_reverse: invalid sample index\n");
       *reversed_index = 0;
       return EXIT_FAILURE;
     }
+   */
 
   /* If a different N was requested, the list needs reconstruction */
   if (N != N_internal)
@@ -377,11 +384,13 @@ sfft_W (const smp_num_samples k, const smp_num_samples N, cmp_complex * W)
 
 
   /* Decide what to do, depending on the requested N */
+  /*
   if (N < 0)
     {
       fprintf (stderr, "sfft_W: %ld is not a valid value for N\n", N);
       return EXIT_FAILURE;
     }
+   */
 
   if (N > N_internal)
     {
@@ -1094,7 +1103,9 @@ sfft_dct_coefficient (const smp_num_samples N, const smp_num_samples k,
                N);
       return EXIT_FAILURE;
     }
-  if (k < 0 || k > N - 1)
+
+  /*if (k < 0 || k > N - 1)*/
+  if (k > N - 1)
     {
       fprintf (stderr,
                "sfft_dct_coefficients: invalid sample index requested %ld\n",

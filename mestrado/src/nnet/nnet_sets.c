@@ -74,12 +74,14 @@ nnet_tset_create (const Name name,
       return NULL;
     }
 
+  /*
   if (output_dimension < 0)
     {
       fprintf (stderr, "nnet_tset_create: invalid number of outputs: %ld\n",
                output_dimension);
       return NULL;
     }
+   */
 
   /* Allocates the new training set */
   new_set = (TSet) malloc (sizeof (nnet_training_set_type));
@@ -339,7 +341,8 @@ nnet_tset_divide (TSet orig_set,
     }
 
   /* Checks the number of elements to transfer */
-  if (nu_elements < 0 || nu_elements > orig_set->nu_elements)
+  /*if (nu_elements < 0 || nu_elements > orig_set->nu_elements)*/
+  if (nu_elements > orig_set->nu_elements)
     {
       fprintf (stderr,
                "nnet_tset_divide: invalid number of elements to transfer: %ld\n",

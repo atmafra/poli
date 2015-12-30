@@ -421,7 +421,7 @@ void nnet_actv_class_info
   for (cur_param = 0; cur_param < activation_class->nu_parameters;
        cur_param++)
     {
-      fprintf (output_fd, "    parameter %d: %s (default %f)\n", cur_param,
+      fprintf (output_fd, "    parameter %lu: %s (default %f)\n", cur_param,
                activation_class->parameter_name[cur_param],
                activation_class->parameter_default[cur_param]);
     }

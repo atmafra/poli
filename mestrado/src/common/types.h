@@ -1,5 +1,5 @@
-#ifndef __TYPES_H_
-#define __TYPES_H_ 1
+#ifndef __COMMON_TYPES_H_
+#define __COMMON_TYPES_H_ 1
 
 #include <stdio.h>
 

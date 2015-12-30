@@ -28,17 +28,6 @@ int cmp_fcn_exec
   /* Auxiliary function exit status */
   int exit_status;
 
-
-
-  /* Validates the number of arguments passed */
-  if (inpc < 0)
-    {
-      fprintf (stderr,
-               "cmp_fcn_exec: negative number of arguments passed: %lu\n",
-               inpc);
-      return (EXIT_FAILURE);
-    }
-
   /* Initializes the list of arguments */
   va_start (inlist, inpc);
 

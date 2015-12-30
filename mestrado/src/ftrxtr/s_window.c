@@ -688,14 +688,14 @@ swin_window (index_list_type * index,
              const swin_purge_type purge_zero_power,
              index_list_type * new_index)
 {
-  index_entry_type source_list; /* pointer to the original list */
-  smp_num_samples samples;      /* number of samples of the source list */
+  index_entry_type source_list;                 /* pointer to the original list */
+  smp_num_samples samples;                      /* number of samples of the source list */
   smp_num_samples samples_between_frames;       /* samples between frames */
-  ldiv_t aux_long_div;          /* auxiliary long integer division structure */
-  swin_number_type frames;      /* number of frames to be generated */
-  swin_number_type current_frame;       /* current frame counter */
-  swin_number_type current_valid_frame; /* current valid frame counter */
-  int exit_status;              /* auxiliary function return status */
+  ldiv_t aux_long_div;                          /* auxiliary long integer division structure */
+  swin_number_type frames;                      /* number of frames to be generated */
+  swin_number_type current_frame;               /* current frame counter */
+  swin_number_type current_valid_frame;         /* current valid frame counter */
+  int exit_status;                              /* auxiliary function return status */
 
 
 
@@ -713,12 +713,15 @@ swin_window (index_list_type * index,
     }
 
   /* Number of samples between frames */
+  /*
   if (superposing_samples < 0)
     {
       fprintf (stderr,
                "swin_window: negative superposing samples requested\n");
       return EXIT_FAILURE;
     }
+   */
+
   if (superposing_samples >= width)
     {
       fprintf (stderr,

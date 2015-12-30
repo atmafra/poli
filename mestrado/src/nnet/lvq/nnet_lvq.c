@@ -465,7 +465,7 @@ nnet_lvq_propagate_set (const LvqNNetwork lvq_nnet, const TSet set)
  */
 int
 nnet_lvq_train_element (LvqNNetwork lvq_nnet,
-                        const TElement element, const RValue learning_rate);
+                        const TElement element, const RValue learning_rate)
 {
   Layer input_layer = NULL;     /* LVQ input layer */
   Layer output_layer = NULL;    /* LVQ output layer */
@@ -680,7 +680,7 @@ nnet_lvq_train_set (LvqNNetwork lvq_nnet,
                     const BoolValue reset_time,
                     const BoolValue output_progress,
                     const size_t progress_width,
-                    const char progress_character);
+                    const char progress_character)
 {
   static DTime t = 0;           /* current training time */
   TElement element = NULL;      /* current element */
