@@ -1,0 +1,129 @@
+#include "nnet_units.h"
+
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "nnet_layers.h"
+
+/*
+ * nnet_unit_create
+ *
+ * Creates one unit at the bottom of layer 'layer_index'
+ * for the given layer array. The current unit of the layer is positioned
+ * to the newly created unit.
+ */
+int
+nnet_unit_create (nnet_layer_array_type * layer,
+                  nnet_layer_index_type layer_index)
+{
+  nnet_unit_type *new_unit, *aux_unit;
+
+  /* Verifies if layer was already created */
+  if (nnet_layer_created (*layer, layer_index) == EXIT_FAILURE)
+    {
+      fprintf (stderr, "nnet_create_unit: layer %d not created yet.\n",
+               layer_index);
+      return (EXIT_FAILURE);
+    }
+
+  /* Allocate memory for the new unit */
+  new_unit = (nnet_unit_type *) malloc (sizeof (nnet_unit_type));
+  if (new_unit == NULL)
+    {
+      fprintf (stderr, "nnet_create_unit: out of memory\n");
+      exit (EXIT_FAILURE);
+    }
+
+  /* Initialize the new unit */
+  new_unit->layer = layer_index;
+  new_unit->unit_index = (*layer)[layer_index].nnet_layer_num_units + 1;
+  new_unit->activation = 0;
+  new_unit->output = 0;
+  new_unit->delta = 0;
+  new_unit->next = NULL;
+
+  /* Update layer attributes */
+  if ((*layer)[layer_index].nu_units == 0)
+    (*layer)[layer_index].first_unit = new_unit;
+  else
+    {
+      /* Links the list */
+      aux_unit = (*layer)[layer_index].nnet_layer_last_unit;
+      aux_unit->nnet_unit_next = new_unit;
+    }
+
+  (*layer)[layer_index].nnet_layer_current_unit = new_unit;
+  (*layer)[layer_index].nnet_layer_last_unit = new_unit;
+  (*layer)[layer_index].nnet_layer_num_units++;
+  (*layer)[layer_index].nnet_layer_num_current_unit =
+    (*layer)[layer_index].nnet_layer_num_units;
+
+  return (EXIT_SUCCESS);
+}
+
+
+/*
+ * nnet_unit_set
+ *
+ * Updates the attributes of a given unit.
+ * Returns EXIT_SUCCESS if process was OK; otherwise, returns EXIT_FAILURE.
+ *
+ * The unit is given by
+ *    - unit: pointer to the unit structure
+ *
+ * The updateable attributes are
+ *    - activation: current unit's activation
+ *    - output: current unit's output
+ *    - delta: current unit's delta
+ */
+int nnet_unit_set
+  (nnet_unit_type * unit,
+   double activation,
+   double output, double delta, double beta_tanh, double k_tanh)
+{
+  if (unit == NULL)
+    {
+      fprintf (stderr, "nnet_unit_set: invalid unit\n");
+      return (EXIT_FAILURE);
+    }
+
+  unit->nnet_unit_activation = activation;
+  unit->nnet_unit_output = output;
+  unit->nnet_unit_delta = delta;
+
+  return (EXIT_SUCCESS);
+}
+
+
+
+/*
+ * nnet_unit_get
+ *
+ * Retrieves the attributes of a given unit.
+ *
+ * The unit is given by
+ *   - unit: pointer to the unit structure
+ *
+ * The retrieved attributes are
+ *   - layer: current unit's layer index
+ *   - index: current unit's index
+ *   - activation: current unit's activation
+ *   - output: current unit's output
+ *   - delta: current unit's delta
+ */
+int nnet_unit_get
+  (nnet_unit_type unit,
+   nnet_layer_index_type * layer,
+   nnet_layer_units_type * index,
+   double *activation,
+   double *output, double *delta, double *beta_tanh, double *k_tanh)
+{
+  *layer = unit.nnet_unit_layer;
+  *index = unit.nnet_unit_index;
+  *activation = unit.nnet_unit_activation;
+  *output = unit.nnet_unit_output;
+  *delta = unit.nnet_unit_delta;
+
+  return (EXIT_SUCCESS);
+}

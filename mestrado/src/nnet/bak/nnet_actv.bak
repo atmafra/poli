@@ -1,0 +1,318 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stddef.h>
+#include "nnet_actv.h"
+
+/******************************************************************************
+ *                                                                            *
+ *                    ACTIVATION FUNCTION IMPLEMENTATIONS                     *
+ *                                                                            *
+ ******************************************************************************/
+
+/*
+ * nnet_actv_fcn_threshold
+ *
+ * Threshold activation function
+ * - nnet_actv_par_1: threshold point
+ * - nnet_actv_par_2: value on the left side of the threshold point
+ * - nnet_actv_par_3: value on the right side of the threshold point
+ */
+nnet_unit_value_type nnet_actv_fcn_threshold
+  (const nnet_unit_value_type nnet_unit_activation,
+   const nnet_unit_value_type * nnet_actv_par)
+{
+  nnet_unit_value_type retval, tpoint, lvalue, rvalue, a;
+
+  /* Initialization */
+  a = nnet_unit_activation;
+  tpoint = nnet_actv_par[0];
+  lvalue = nnet_actv_par[1];
+  rvalue = nnet_actv_par[2];
+
+  /* Return value */
+  retval = (a >= tpoint ? rvalue : lvalue);
+
+  return retval;
+}
+
+
+
+/*
+ * nnet_actv_fcn_linear
+ *
+ * Linear activation function
+ * - nnet_actv_par_1: angular coefficient
+ * - nnet_actv_par_2: linear coefficient
+ */
+nnet_unit_value_type nnet_actv_fcn_linear
+  (const nnet_unit_value_type nnet_unit_activation,
+   const nnet_unit_value_type * nnet_actv_par)
+{
+  nnet_unit_value_type retval, angc, linc, a;
+
+  /* Initialization */
+  a = nnet_unit_activation;
+  angc = nnet_actv_par[0];
+  linc = nnet_actv_par[1];
+
+  /* Return value */
+  retval = linc + angc * a;
+
+  return retval;
+}
+
+
+/*
+ * nnet_actv_fcn_pcwlinear
+ *
+ * Piecewise-linear activation function
+ * - nnet_actv_par_1: left threshold point
+ * - nnet_actv_par_2: right threshold point
+ * - nnet_actv_par_3: value on the left side of the left threshold
+ * - nnet_actv_par_4: value on the right side of the right threshold
+ *
+ * Definition
+ *
+ * f (activation) =
+ *   left value , if activation <= left threshold;
+ *   right value, if activation >= right threshold
+ *   linear     , if left threshold < activation < right threshold
+ *
+ * If right value = left value, threshold function will be called.
+ * If right value < left value, values will be shifted.
+ */
+nnet_unit_value_type nnet_actv_fcn_pcwlinear
+  (const nnet_unit_value_type nnet_unit_activation,
+   const nnet_unit_value_type * nnet_actv_par)
+{
+  nnet_unit_value_type retval, lthresh, rthresh, lvalue, rvalue, a;
+
+  /* Initialization */
+  a = nnet_unit_activation;
+  if (nnet_actv_par[0] < nnet_actv_par[1])
+    {
+      lthresh = nnet_actv_par[0];
+      rthresh = nnet_actv_par[1];
+    }
+  else
+    {
+      lthresh = nnet_actv_par[1];
+      rthresh = nnet_actv_par[0];
+    }
+  lvalue = nnet_actv_par[2];
+  rvalue = nnet_actv_par[3];
+
+  /* Return value */
+  if (lthresh != rthresh)
+    {
+      if (a <= lthresh)
+        {
+          retval = lvalue;
+        }
+      else if (a >= rthresh)
+        {
+          retval = rvalue;
+        }
+      else
+        {
+          retval =
+            ((a - lthresh) * (rvalue - lvalue)) / (rthresh - lthresh) +
+            lvalue;
+        }
+    }
+  else
+    {
+      retval = nnet_actv_fcn_threshold (a, lthresh, lvalue, rvalue, 0.0, 0.0);
+    }
+
+  return retval;
+}
+
+
+
+/*
+ * nnet_actv_fcn_sigmoidal
+ *
+ * Sigmoidal activation function
+ * - nnet_actv_par_1: scale coefficient
+ * - nnet_actv_par_2: exponent coefficient
+ */
+nnet_unit_value_type nnet_actv_fcn_sigmoidal
+  (const nnet_unit_value_type nnet_unit_activation,
+   const nnet_unit_value_type * nnet_actv_par);
+{
+  nnet_unit_value_type retval, k1, k2, a;
+
+  /* Initialization */
+  a = nnet_unit_activation;
+  k1 = nnet_actv_par[0];
+  k2 = nnet_actv_par[1];
+
+  /* Return value */
+  retval = k1 / (1.0 + exp (-k2 * a));
+
+  return retval;
+}
+
+
+
+/*
+ * nnet_actv_fcn_tanh
+ *
+ * Hyperbolic Tangent activation function
+ * - nnet_actv_par_1: scale coefficient
+ * - nnet_actv_par_2: angle coefficient
+ */
+nnet_unit_value_type nnet_actv_fcn_tanh
+  (const nnet_unit_value_type nnet_unit_activation,
+   const nnet_unit_value_type * nnet_actv_par)
+{
+  nnet_unit_value_type retval, k1, k2, a;
+
+  /* Initialization */
+  a = nnet_unit_activation;
+  k1 = nnet_actv_par[0];
+  k2 = nnet_actv_par[1];
+
+  /* Return value */
+  retval = k1 * tanh (k2 * a);
+
+  return retval;
+}
+
+
+
+/*
+ * nnet_actv_init_class
+ *
+ * Initializes the internal activation function class variables
+ */
+static int nnet_actv_init_class
+  (nnet_actv_class_type * cls,
+   nnet_actv_class_idx_type function_class,
+   nnet_actv_fcn_type function,
+   size_t nu_parameters,
+   char *parameter_name[__NNET_PAR_NAME_SIZE_],
+   nnet_unit_value_type * parameter_default)
+{
+  size_t parm;                  /* Parameter counter */
+
+  /* Class activation function */
+  cls->function_class = function_class;
+  cls->function = function;
+
+  if (nu_parameters < 0)
+    then
+    {
+      fprintf (stderr,
+               "nnet_actv_init_class: negative number of parameters\n");
+      return (EXIT_FAILURE);
+    }
+  else
+    {
+      cls->nu_parameters = nu_parameters;
+    }
+
+  /* Allocate memory for the parameter names */
+  cls->parameter_name =
+    (char *) malloc (__NNET_PAR_NAME_SIZE_ * nu_parameters);
+  if (cls->parameter_name == NULL)
+    {
+      fprintf (stderr, "nnet_actv_init_class: virtual memory exhausted\n");
+      return (EXIT_FAILURE);
+    }
+
+  /* Allocate memory for the parameter defaults */
+  cls->parameter_default =
+    (nnet_unit_value_type *) malloc (sizeof (nnet_unit_value_type) *
+                                     nu_parameters);
+  if (cls->parameter_default == NULL)
+    {
+      fprintf (stderr, "nnet_actv_init_class: virtual memory exhausted\n");
+      return (EXIT_FAILURE);
+    }
+
+
+  /* Activation function parameter names and default values */
+  for (parm = 0; parm < nu_parameters; parm++)
+    {
+      sprintf (cls->parameter_name[parm], "%s", parameter_name[parm]);
+      cls->parameter_default[parm] = parameter_default[parm];
+    }
+
+  return EXIT_SUCCESS;
+}
+
+
+
+/*
+ * Activation Function Classes
+ */
+
+/* Threshold function class */
+nnet_actv_class_type nnet_actv_class_threshold;
+
+/* Linear function class */
+nnet_actv_class_type nnet_actv_class_linear;
+
+/* Piecewise-linear function class */
+nnet_actv_class_type nnet_actv_class_pcwlinear;
+
+/* Sigmoidal function class */
+nnet_actv_class_type nnet_actv_class_sigmoidal;
+
+/* Hyperbolic Tangent function class */
+nnet_actv_class_type nnet_actv_class_tanh;
+
+
+
+/*
+ * nnet_actv_init_all_classes
+ *
+ * Initializes all the internal activation function classes.
+ */
+int
+nnet_actv_init_all_classes ()
+{
+  (nnet_actv_class_type * cls,
+   nnet_actv_class_idx_type function_class,
+   nnet_actv_fcn_type function,
+   const size_t nu_parameters,
+   const char *parameter_name[__NNET_PAR_NAME_SIZE_],
+   const nnet_unit_value_type * parameter_default) int rslt;
+
+  rslt = 0;
+
+  rslt = rslt | nnet_actv_init_class
+    (&nnet_actv_class_threshold, NNET_ACTV_THRESHOLD, nnet_actv_fcn_threshold,
+     threshold_nu_parameters, threshold_parameter_names,
+     threshold_parameter_defaults);
+
+  rslt = rslt | nnet_actv_init_class
+    (&nnet_actv_class_linear, NNET_ACTV_LINEAR, nnet_actv_fcn_linear,
+     linear_nu_parameters, linear_parameter_names, linear_parameter_defaults);
+
+  rslt = rslt | nnet_actv_init_class
+    (&nnet_actv_class_pcwlinear, NNET_ACTV_PCWLINEAR, nnet_actv_fcn_pcwlinear,
+     pcwlinear_nu_parameters, pcwlinear_parameter_names,
+     pcwlinear_parameter_defaults);
+
+  rslt = rslt | nnet_actv_init_class
+    (&nnet_actv_class_sigmoidal, NNET_ACTV_SIGMOIDAL, nnet_actv_fcn_sigmoidal,
+     sigmoidal_nu_parameters, sigmoidal_parameter_names,
+     sigmoidal_parameter_defaults);
+
+  rslt = rslt | nnet_actv_init_class
+    (&nnet_actv_class_tanh, NNET_ACTV_TANH, nnet_actv_fcn_tanh,
+     tanh_nu_parameters, tanh_parameter_names, tanh_parameter_defaults);
+
+  if (rslt == 0)
+    return (EXIT_SUCCESS);
+  else
+    {
+      fprintf (stderr,
+               "nnet_actv_init_all_classes: error initializing activation function classes\n");
+      return (EXIT_FAILURE);
+    }
+}

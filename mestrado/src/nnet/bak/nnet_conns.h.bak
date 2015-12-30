@@ -1,0 +1,167 @@
+/*---------------------------------------------------------------------*-c-*-*/
+/* Library "nnet_conns.h"                                                    */
+/*---------------------------------------------------------------------------*/
+#ifndef __NNET_CONNS_H_
+#define __NNET_CONNS_H_ 1
+
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "nnet_layers.h"
+#include "nnet_types.h"
+
+/*
+ * BASIC OPERATIONS WITH UNIT CONNECTIONS
+ */
+
+/*
+ * nnet_uncn_matrix_init
+ *
+ * Initializes the Unit Connection Matrix.
+ */
+void nnet_uncn_matrix_init (nnet_uncn_matrix_type * uncn_matrix);
+
+/*
+ * nnet_uncn_absolute_index
+ *
+ * Returns the absolute position of the unit in the Unit Connection Matrix
+ * list, given the number units at origin and destination layers, 
+ * and the indexes of the origin and destination units.
+ */
+nnet_uncn_conn_index_type nnet_uncn_absolute_index
+  (nnet_layer_index_type units_dest,
+   nnet_layer_units_type orig_unit_index,
+   nnet_layer_units_type dest_unit_index);
+
+/*
+ * nnet_uncn_relative_index
+ *
+ * Returns the position of the unit in the Unit Connection Matrix
+ * in terms of the origin and destination unit indexes.
+ */
+void nnet_uncn_relative_index
+  (nnet_uncn_conn_index_type absolute_index,
+   nnet_layer_index_type units_dest,
+   nnet_layer_units_type * orig_unit_index,
+   nnet_layer_units_type * dest_unit_index);
+
+/*
+ * nnet_uncn_goto_connection
+ *
+ * Returns a pointer to a given connection.
+ * Returns NULL if the process fails.
+ */
+nnet_uncn_type *nnet_uncn_goto_connection
+  (nnet_lcnn_matrix_type lc_matrix,
+   nnet_layer_index_type orig_layer,
+   nnet_layer_index_type dest_layer,
+   nnet_layer_units_type orig_unit, nnet_layer_units_type dest_unit);
+
+/*
+ * nnet_uncn_connect
+ *
+ * Allocates space for the Unit Connection Matrix.
+ * Initializes the Unit Connection Matrix parameters.
+ * Returns EXIT_SUCCESS if ok or EXIT_FAILURE otherwise, displaying
+ * error message.
+ */
+int nnet_uncn_connect
+  (nnet_uncn_matrix_type * uc_matrix,
+   nnet_layer_array_type layer_array,
+   nnet_layer_index_type orig_layer, nnet_layer_index_type dest_layer);
+
+/*
+ * nnet_uncn_are_connected
+ *
+ * Returns 0 if origin and destination units are connected.
+ * Other value is returned if not connected yet.
+ */
+int nnet_uncn_are_connected
+  (nnet_lcnn_matrix_type lc_matrix,
+   nnet_layer_index_type orig_layer,
+   nnet_layer_index_type dest_layer,
+   nnet_layer_units_type orig_unit, nnet_layer_units_type dest_unit,
+   nnet_uncn_weight_type * weight, nnet_uncn_connected_type * connected);
+
+/*
+ * nnet_uncn_get
+ *
+ * Retrieves all attributes from a given connection.
+ *
+ * The connection is given by
+ *   - nnet_lcnn_matrix_type: layer connection matrix
+ *   - orig_layer: origin layer
+ *   - dest_layer: destination_layer
+ *   - orig_unit: origin unit index in the origin layer
+ *   - dest_unit: destination unit index in the destination layer
+ *
+ * The returned attributes are
+ *   - weight: connection weight
+ *   - connected: indicates if connection is active
+ */
+int nnet_uncn_get
+  (nnet_lcnn_matrix_type lc_matrix, nnet_layer_index_type orig_layer,
+   nnet_layer_index_type dest_layer, nnet_layer_units_type orig_unit,
+   nnet_layer_units_type dest_unit, nnet_uncn_weight_type * weight,
+   nnet_uncn_connected_type * connected);
+
+/*
+ * nnet_uncn_set
+ *
+ * Sets the weight value between units.
+ */
+int nnet_uncn_set
+  (nnet_lcnn_matrix_type * lc_matrix,
+   nnet_layer_index_type orig_layer,
+   nnet_layer_index_type dest_layer,
+   nnet_layer_units_type orig_unit,
+   nnet_layer_units_type dest_unit,
+   nnet_uncn_weight_type weight, nnet_uncn_connected_type connected);
+
+
+/*
+ * BASIC OPERATIONS WITH LAYER CONNECTIONS
+ */
+/*
+ * nnet_lcnn_matrix_init
+ *
+ * Initializes the Layer Connection Matrix
+ */
+void nnet_lcnn_matrix_init (nnet_lcnn_matrix_type * matrix);
+
+
+/*
+ * nnet_lcnn_are_connected
+ *
+ * Returns 0 if origin and destination layers are already connected.
+ * Other value is returned if not connected yet.
+ */
+int nnet_lcnn_are_connected
+  (nnet_lcnn_matrix_type matrix,
+   nnet_layer_index_type orig_layer, nnet_layer_index_type dest_layer);
+
+
+/*
+ * nnet_lcnn_connect
+ *
+ * Creates the connection between origin and destination layers.
+ * Does nothing if already connected.
+ */
+int nnet_lcnn_connect
+  (nnet_lcnn_matrix_type * matrix,
+   nnet_layer_array_type layer_array,
+   nnet_layer_index_type orig_layer, nnet_layer_index_type dest_layer);
+
+
+/*
+ * nnet_lcnn_disconnect
+ *
+ * Disconnects origin and destination layers.
+ * Returns EXIT_FAILURE if not connected.
+ */
+int nnet_lcnn_disconnect
+  (nnet_lcnn_matrix_type * matrix,
+   nnet_layer_index_type orig_layer, nnet_layer_index_type dest_layer);
+
+
+#endif /* __NNET_CONNS_H_ */
