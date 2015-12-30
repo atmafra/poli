@@ -84,8 +84,11 @@ spre_list_preemphasis (sample_list_type * list, const spre_real alpha)
 
       /* Saves the current value */
       saved_value.re = cur_value.re;
+
       if (list->data_type == SMP_COMPLEX)
         saved_value.im = cur_value.im;
+      else
+        saved_value.im = 0.0;
 
       /* Calculates the new current value */
       cur_value.re = spre_preemphasis (alpha, cur_value.re, last_value.re);

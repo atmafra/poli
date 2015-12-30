@@ -560,7 +560,7 @@ swav_read_pcm (FILE * in_file, index_entry_type * entry)
       if (exit_status != EXIT_SUCCESS)
         {
           fprintf (stderr,
-                   "swav_read_pcm: error adding sample list value at position %d\n",
+                   "swav_read_pcm: error adding sample list value at position %lu\n",
                    cur_sample);
           return (EXIT_FAILURE);
         }
@@ -734,24 +734,24 @@ swav_write_header_info (FILE * out_file, const swav_type wave)
   fprintf (out_file, "RIFF Chunk\n");
   fprintf (out_file, "----------\n");
   fprintf (out_file, "RIFF magick              = '%s'\n", wave.riff);
-  fprintf (out_file, "RIFF size                = %d\n", wave.size);
+  fprintf (out_file, "RIFF size                = %lu\n", wave.size);
   fprintf (out_file, "\n");
 
   /* WAVE format chunk */
   fprintf (out_file, "WAVE Format Chunk\n");
   fprintf (out_file, "-----------------\n");
   fprintf (out_file, "WAVE magick              = '%s'\n", wave.wave_c.wave);
-  fprintf (out_file, "Format chunk length      = %d bytes\n",
+  fprintf (out_file, "Format chunk length      = %lu bytes\n",
            wave.wave_c.length);
-  fprintf (out_file, "Format                   = %x (%s)\n",
+  fprintf (out_file, "Format                   = %lu (%s)\n",
            swav_fmt_enum_to_tag (wave.wave_c.format_tag),
            swav_fmt_enum_to_str (wave.wave_c.format_tag));
-  fprintf (out_file, "Channels                 = %d\n", wave.wave_c.channels);
-  fprintf (out_file, "Samples per second       = %d\n",
+  fprintf (out_file, "Channels                 = %lu\n", wave.wave_c.channels);
+  fprintf (out_file, "Samples per second       = %lu\n",
            wave.wave_c.samples_per_second);
-  fprintf (out_file, "Average bytes per second = %d\n",
+  fprintf (out_file, "Average bytes per second = %lu\n",
            wave.wave_c.average_bytes_per_second);
-  fprintf (out_file, "Bytes per sample         = %d\n",
+  fprintf (out_file, "Bytes per sample         = %lu\n",
            wave.wave_c.bytes_per_sample);
   fprintf (out_file, "\n");
 
@@ -762,7 +762,7 @@ swav_write_header_info (FILE * out_file, const swav_type wave)
   switch (wave.wave_c.format_tag)
     {
     case PCM:
-      fprintf (out_file, "Bits per sample          = %d\n",
+      fprintf (out_file, "Bits per sample          = %lu\n",
                wave.wave_c.pcm_specific.bits_per_sample);
       break;
 
@@ -775,7 +775,7 @@ swav_write_header_info (FILE * out_file, const swav_type wave)
   fprintf (out_file, "Data Chunk\n");
   fprintf (out_file, "----------\n");
   fprintf (out_file, "DATA magick              = '%s'\n", wave.data_c.data);
-  fprintf (out_file, "Data chunk length        = %d\n", wave.data_c.length);
+  fprintf (out_file, "Data chunk length        = %lu\n", wave.data_c.length);
   fprintf (out_file, "\n");
 
   /* Complementary info */
@@ -786,13 +786,13 @@ swav_write_header_info (FILE * out_file, const swav_type wave)
   if (wave.size == 0)
     fprintf (out_file, "0 bytes\n");
   else
-    fprintf (out_file, "%d bytes\n", wave.size + 8);
+    fprintf (out_file, "%lu bytes\n", wave.size + 8);
 
   fprintf (out_file, "Number of samples        = ");
   if (wave.wave_c.bytes_per_sample == 0)
     fprintf (out_file, "0\n");
   else
-    fprintf (out_file, "%d\n",
+    fprintf (out_file, "%lu\n",
              wave.data_c.length / wave.wave_c.bytes_per_sample);
 
   fprintf (out_file, "Duration                 = ");
@@ -830,7 +830,7 @@ swav_get_sample_value (const swav_type riff, const size_t sample,
   if (sample > samples)
     {
       fprintf (stderr,
-               "swav_get_sample_value: invalid sample requested: %d from %d samples\n",
+               "swav_get_sample_value: invalid sample requested: %lu from %lu samples\n",
                sample, samples);
       return (EXIT_FAILURE);
     }
@@ -839,7 +839,7 @@ swav_get_sample_value (const swav_type riff, const size_t sample,
   if (channel > riff.wave_c.channels)
     {
       fprintf (stderr,
-               "swav_get_sample_value: invalid channel requested: %d from %d\n",
+               "swav_get_sample_value: invalid channel requested: %lu from %lu\n",
                channel, riff.wave_c.channels);
       return (EXIT_FAILURE);
     }

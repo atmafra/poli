@@ -30,9 +30,8 @@ write_index (const index_list_type index,
   int exit_status;              /* auxiliary function return status flag */
   smp_index_pos cur_cnt;        /* auxiliary position counter */
   index_entry_type cur;         /* auxiliary pointer for the current entry */
-  FILE *fp, *fplist;            /* output file descriptors */
-  /*
-   char *extension = ".dat"; *//* file extension for the lists */
+  FILE *fp = (FILE *) NULL;     /* output file descriptors */
+  FILE *fplist = (FILE *) NULL; /* output file descriptors */
   FileName filename;            /* output file name */
 
 
@@ -55,16 +54,15 @@ write_index (const index_list_type index,
        * Index header info
        * Outputs the index ID and its parent ID
        */
-      fprintf (fp, "Index ID       : %d\n", index.index_id);
+      fprintf (fp, "Index ID       : %lu\n", index.index_id);
       if (index.parent_index != NULL)
-        fprintf (fp, "Parent Index ID: %d\n", index.parent_index->index_id);
+        fprintf (fp, "Parent Index ID: %lu\n", index.parent_index->index_id);
 
       /* Outputs the number of lists under the index */
       fprintf (fp, "Number of lists: %ld\n", index.num_entries);
 
       if (index.num_entries > 0)
         fprintf (fp, "\n");
-
     }
 
   /*
@@ -100,7 +98,7 @@ write_index (const index_list_type index,
           if (write_index == SMP_WRITE_INDEX)
             {
               /* Outputs list header info */
-              fprintf (fp, "List #%d\n", cur_cnt);
+              fprintf (fp, "List #%lu\n", cur_cnt);
               fprintf (fp, "Position   : %ld\n", cur->position);
               fprintf (fp, "Name       : %s\n", cur->name);
               fprintf (fp, "File       : %s\n", cur->file);
@@ -519,7 +517,7 @@ smp_translate_wave (const swav_type riff, sample_list_type * smp_list)
           if (exit_status != EXIT_SUCCESS)
             {
               fprintf (stderr,
-                       "smp_translate_wave: error setting list value at positioin %d\n",
+                       "smp_translate_wave: error setting list value at positioin %lu\n",
                        cur_sample + 1);
               return EXIT_FAILURE;
             }

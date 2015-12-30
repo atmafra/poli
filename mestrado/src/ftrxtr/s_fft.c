@@ -1142,7 +1142,7 @@ sfft_dct_exec (index_list_type * in_index,
   sample_list_type *signal_list;
 
   /* Input index entry position */
-  smp_index_pos in_pos;
+  /*smp_index_pos in_pos;*/
 
   /* Current sample counter */
   smp_num_samples cur_sample;
@@ -1160,7 +1160,7 @@ sfft_dct_exec (index_list_type * in_index,
 
 
   /* Gets the current list position */
-  in_pos = in_index->current->position;
+  /*in_pos = in_index->current->position;*/
 
   /* Stores the list address at the pointer to the signal list */
   signal_list = in_index->current->list;

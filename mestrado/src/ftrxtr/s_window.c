@@ -535,16 +535,16 @@ swin_window_list (const index_entry_type source_list,
                   const spre_real trg_central_value,
                   const spre_real B_kaiser, index_list_type * out_index)
 {
-  smp_num_samples samples;      /* number of samples of the source list */
-  FileName frame_list_name;     /* frames list file name */
-  FileName frame_file_name;     /* frame file name */
-  smp_num_samples read_pos, real_read_pos;      /* source list read position */
-  smp_num_samples frame_pos;    /* current source list frame position */
-  smp_index_pos aux_pos;        /* new list insert position */
-  cmp_complex value;            /* auxiliary sample value */
-  cmp_complex windowed_value;   /* auxiliary windowed sample value */
-  cmp_real ini_time, inc_time;  /* time scale parameters */
-  int exit_status;              /* auxiliary function return status */
+  smp_num_samples samples;                  /* number of samples of the source list */
+  FileName frame_list_name;                 /* frames list file name */
+  FileName frame_file_name;                 /* frame file name */
+  smp_num_samples read_pos, real_read_pos;  /* source list read position */
+  smp_num_samples frame_pos;                /* current source list frame position */
+  smp_index_pos aux_pos;                    /* new list insert position */
+  cmp_complex value;                        /* auxiliary sample value */
+  cmp_complex windowed_value;               /* auxiliary windowed sample value */
+  cmp_real inc_time;                        /* time scale parameters */
+  int exit_status;                          /* auxiliary function return status */
 
 
   /* Gets the number of samples */
@@ -552,17 +552,16 @@ swin_window_list (const index_entry_type source_list,
   if (width > samples)
     {
       fprintf (stderr,
-               "swin_window_list: frame width (%d) is larger than the number of samples (%ld)\n",
+               "swin_window_list: frame width (%lu) is larger than the number of samples (%ld)\n",
                width, samples);
       return EXIT_FAILURE;
     }
 
   /* Determines the list and file names */
-  sprintf (frame_list_name, "frame [%s,%d]", source_list->name, frame_number);
-  sprintf (frame_file_name, "%s.%d", source_list->file, frame_number);
+  sprintf (frame_list_name, "frame [%s,%lu]", source_list->name, frame_number);
+  sprintf (frame_file_name, "%s.%lu", source_list->file, frame_number);
 
   /* Time scale parameters */
-  ini_time = source_list->list->ini_time;
   inc_time = source_list->list->inc_time;
 
   /* Create a new list for the frame */
@@ -575,7 +574,7 @@ swin_window_list (const index_entry_type source_list,
   if (exit_status != EXIT_SUCCESS)
     {
       fprintf (stderr,
-               "swin_window_list: error creating new list for frame %d\n",
+               "swin_window_list: error creating new list for frame %lu\n",
                frame_number);
       return EXIT_FAILURE;
     }
@@ -635,7 +634,7 @@ swin_window_list (const index_entry_type source_list,
       if (exit_status != EXIT_SUCCESS)
         {
           fprintf (stderr,
-                   "swin_window_list: error setting value in frame %d\n",
+                   "swin_window_list: error setting value in frame %lu\n",
                    frame_number);
           return EXIT_FAILURE;
         }
@@ -708,7 +707,7 @@ swin_window (index_list_type * index,
   if (width > samples)
     {
       fprintf (stderr,
-               "swin_window: frame width (%d) is larger than the number of samples (%ld)\n",
+               "swin_window: frame width (%lu) is larger than the number of samples (%ld)\n",
                width, samples);
       return EXIT_FAILURE;
     }
@@ -777,7 +776,7 @@ swin_window (index_list_type * index,
                           B_kaiser, new_index);
       if (exit_status != EXIT_SUCCESS)
         {
-          fprintf (stderr, "swin_window: error generating frame %d\n",
+          fprintf (stderr, "swin_window: error generating frame %lu\n",
                    current_frame);
           return EXIT_FAILURE;
         }

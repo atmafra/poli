@@ -34,7 +34,7 @@ int cmp_fcn_exec
   if (inpc < 0)
     {
       fprintf (stderr,
-               "cmp_fcn_exec: negative number of arguments passed: %d\n",
+               "cmp_fcn_exec: negative number of arguments passed: %lu\n",
                inpc);
       return (EXIT_FAILURE);
     }
