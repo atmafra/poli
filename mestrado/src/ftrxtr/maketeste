@@ -1,5 +1,0 @@
-gcc -ansi -Wall -Werror -ggdb \
--I../common/ -I../errorh/ -I../strutils/ -I../incstat/ \
-teste.c libftrxtr.a ../errorh/liberrorh.a ../strutils/libstrutils.a \
-../incstat/libincstat.a \
--lm -o teste

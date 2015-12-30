@@ -1,8 +1,0 @@
-gcc -ansi -Wall -Werror -ggdb \
--I../errorh/ -I../vector/ -I../strutils -I../common/ -I../table/ \
--I../function/ \
-tfiles.c libnnet.a \
-../errorh/liberrorh.a ../incstat/libincstat.a ../function/libfunction.a \
-../vector/libvector.a ../strutils/libstrutils.a ../trmap/libtrmap.a \
-../matrix/libmatrix.a \
--lm -o tfiles

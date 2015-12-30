@@ -1,7 +1,0 @@
-gcc -ansi -Wall -Werror -ggdb \
-../errorh/errorh.o ../vector/vector.o \
-../incstat/incstat.o ../strutils/strutils.o \
-../errorh/errorh.o \
--I../common/ -I../errorh/ -I../vector/ \
--I../strutils/ \
--lm table.c tstab.c -o tstab

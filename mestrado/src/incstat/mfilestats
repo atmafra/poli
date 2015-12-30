@@ -1,8 +1,0 @@
-#!/bin/bash
-gcc -ansi -Wall -Werror -W \
-filestats.c libincstat.a \
-../common/libtypes.a \
-../strutils/libstrutils.a \
-../errorh/liberrorh.a \
--I../common/ -I../strutils/ -I../errorh/ \
--lm -ggdb -o filestats
