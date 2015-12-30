@@ -1,0 +1,5 @@
+gcc -ansi -Wall -Werror -ggdb \
+-I../common/ -I../vector/ -I../errorh/ \
+teste.c libmatrix.a \
+../vector/libvector.a ../incstat/libincstat.a ../errorh/liberrorh.a \
+-lm -o teste

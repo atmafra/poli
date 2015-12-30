@@ -1,0 +1,6 @@
+gcc -ansi -Wall -Werror -ggdb \
+-I../vector/ -I../common/ -I../function/ -I../table/ \
+teste.c libnnet.a \
+../incstat/libincstat.a ../function/libfunction.a ../vector/libvector.a \
+../table/libtable.a \
+-lm -o teste

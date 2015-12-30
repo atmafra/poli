@@ -1,0 +1,16 @@
+#!/bin/bash
+gcc -ansi -Wall -Werror -I../ftrxtr/ -I../common/ mel2hz.c -o mel2hz \
+../ftrxtr/libftrxtr.a \
+../inparse/libinparse.a \
+../incstat/libincstat.a \
+../common/libtypes.a \
+../strutils/libstrutils.a \
+../errorh/liberrorh.a -lm
+
+gcc -ansi -Wall -Werror -I../ftrxtr/ -I../common/ hz2mel.c -o hz2mel \
+../ftrxtr/libftrxtr.a \
+../inparse/libinparse.a \
+../incstat/libincstat.a \
+../common/libtypes.a \
+../strutils/libstrutils.a \
+../errorh/liberrorh.a -lm
