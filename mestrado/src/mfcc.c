@@ -53,7 +53,7 @@ main (int argc, char **argv)
   char *input_ext = NULL;       /* input file extension */
   char *output_file = NULL;     /* current output file name */
   char *output_ext = ".mfcc";   /* output file extension */
-  char *param_file = NULL;      /* parameters file */
+  /*char *param_file = NULL;*/  /* parameters file */
   char *inlist_file = NULL;     /* file containing multiple input files */
   char *output_dir = NULL;      /* output directory */
 
@@ -115,8 +115,10 @@ main (int argc, char **argv)
     output_file = plist.parameter[2].value.stringvalue;
 
   /* Parameter file name */
+  /*
   if (plist.parameter[3].passed == TRUE)
     param_file = plist.parameter[3].value.stringvalue;
+   */
 
   /* File containing list of input files */
   if (plist.parameter[4].passed == TRUE)

@@ -78,64 +78,64 @@ usage (void)
 int
 main (int argc, char **argv)
 {
-  char *preffix = NULL;                 /* file names preffix */
-  size_t preffix_length;                /* preffix string length */
+  char *preffix = NULL;                     /* file names preffix */
+  size_t preffix_length;                    /* preffix string length */
 
-  char *net_fext = ".net";              /* network file extension */
-  char *tr_net_fext = NULL;             /* trained network file extension */
-  char *sv_fext = NULL;                 /* savepoint network file extension */
-  char *set_fext = ".set";              /* test set file extension */
-  char *tm_fext = ".map";               /* transition map file extension */
-  char *sl_fext = ".sl";                /* status list file extension */
+  char *net_fext = ".net";                  /* network file extension */
+  char *tr_net_fext = NULL;                 /* trained network file extension */
+  char *sv_fext = NULL;                     /* savepoint network file extension */
+  char *set_fext = ".set";                  /* test set file extension */
+  char *tm_fext = ".map";                   /* transition map file extension */
+  char *sl_fext = ".sl";                    /* status list file extension */
 
-  char *net_file = NULL;                /* neural network file name */
-  char *tr_net_file = NULL;             /* trained neural network file name */
-  char *sv_net_file = NULL;             /* savepoint neural network file name */
-  char *set_file = NULL;                /* training set file name */
-  char *tm_file = NULL;                 /* transition map file name */
-  char *sl_file = NULL;                 /* status list file name */
-  char *inlist_file = NULL;             /* file containing multiple input files */
+  char *net_file = NULL;                    /* neural network file name */
+  char *tr_net_file = NULL;                 /* trained neural network file name */
+  char *sv_net_file = NULL;                 /* savepoint neural network file name */
+  char *set_file = NULL;                    /* training set file name */
+  char *tm_file = NULL;                     /* transition map file name */
+  char *sl_file = NULL;                     /* status list file name */
+  char *inlist_file = NULL;                 /* file containing multiple input files */
 
-  char *tr_net_dir = NULL;              /* trained network output directory */
-  char *tm_dir = NULL;                  /* transition map output directory */
-  char *sl_dir = NULL;                  /* status list output directory */
+  char *tr_net_dir = NULL;                  /* trained network output directory */
+  char *tm_dir = NULL;                      /* transition map output directory */
+  char *sl_dir = NULL;                      /* status list output directory */
 
-  char *tr_net_base = NULL;             /* trained network base name */
+  char *tr_net_base = NULL;                 /* trained network base name */
 
-  FILE *net_fd = NULL;                  /* input network file descriptor */
-  FILE *tr_net_fd = NULL;               /* trained network file descriptor */
-  FILE *sv_net_fd = NULL;               /* savepoint network file descriptor */
-  FILE *tm_fd = NULL;                   /* transition map file descriptor */
-  FILE *sl_fd = NULL;                   /* status list file descriptor */
-  FILE *inlist_fd = NULL;               /* input list file descriptor */
+  FILE *net_fd = NULL;                      /* input network file descriptor */
+  FILE *tr_net_fd = NULL;                   /* trained network file descriptor */
+  FILE *sv_net_fd = NULL;                   /* savepoint network file descriptor */
+  FILE *tm_fd = NULL;                       /* transition map file descriptor */
+  FILE *sl_fd = NULL;                       /* status list file descriptor */
+  FILE *inlist_fd = NULL;                   /* input list file descriptor */
 
-  BoolValue tm_flag = FALSE;            /* flag: output transition map to file */
-  BoolValue sl_flag = FALSE;            /* flag: output status list to file */
+  BoolValue tm_flag = FALSE;                /* flag: output transition map to file */
+  BoolValue sl_flag = FALSE;                /* flag: output status list to file */
 
-  NNetwork nnet = NULL;                 /* neural network created */
-  SomNNetwork som_nnet = NULL;          /* SOM extension */
-  SomAttributes som_attr = NULL;        /* SOM attributes */
-  LRateFunction lrate_function = NULL;  /* learning rate function */
+  NNetwork nnet = NULL;                     /* neural network created */
+  SomNNetwork som_nnet = NULL;              /* SOM extension */
+  /*SomAttributes som_attr = NULL;*/        /* SOM attributes */
+  /*LRateFunction lrate_function = NULL;*/  /* learning rate function */
 
-  UnitIndex input_dim;                  /* input layer dimension */
-  UnitIndex output_dim;                 /* output layer dimension */
+  UnitIndex input_dim;                      /* input layer dimension */
+  UnitIndex output_dim;                     /* output layer dimension */
 
-  BoolValue trn_flag = FALSE;           /* flag: execute training */
-  BoolValue rst_flag = TRUE;            /* flag: reset initial epoch */
-  DTime epoch = 0;                      /* current epoch */
-  DTime max_epochs;                     /* maximum training epochs */
-  DTime first_epoch = 0;                /* start with this epoch */
-  DTime save_epochs = 0;                /* save network status each n epochs */
-  DTime max_epochs_order;               /* number of digits of max_epochs */
-  TSet t_set = NULL;                    /* training set */
-  TSet aux_set = NULL;                  /* auxiliary training set */
-  time_t t_start, t_stop;               /* training start and stop times */
-  double training_duration;             /* training duration */
+  BoolValue trn_flag = FALSE;               /* flag: execute training */
+  BoolValue rst_flag = TRUE;                /* flag: reset initial epoch */
+  DTime epoch = 0;                          /* current epoch */
+  DTime max_epochs;                         /* maximum training epochs */
+  DTime first_epoch = 0;                    /* start with this epoch */
+  DTime save_epochs = 0;                    /* save network status each n epochs */
+  /*DTime max_epochs_order;*/               /* number of digits of max_epochs */
+  TSet t_set = NULL;                        /* training set */
+  TSet aux_set = NULL;                      /* auxiliary training set */
+  time_t t_start, t_stop;                   /* training start and stop times */
+  double training_duration;                 /* training duration */
 
-  Vector winners = NULL;                /* list of states */
-  TransitionMap trmap = NULL;           /* state transition map */
+  Vector winners = NULL;                    /* list of states */
+  TransitionMap trmap = NULL;               /* state transition map */
 
-  file_mode_type file_mode;             /* single/multi-file input */
+  file_mode_type file_mode;                 /* single/multi-file input */
 
 
   /* command line parameters */
@@ -311,7 +311,7 @@ main (int argc, char **argv)
    */
 
   /* Initialization */
-  max_epochs_order = (DTime) log10 (max_epochs);
+  /*max_epochs_order = (DTime) log10 (max_epochs);*/
 
   if (error_if_null
       (sv_fext = (char *) malloc (max_epochs + strlen (net_fext) + 3),
@@ -355,8 +355,8 @@ main (int argc, char **argv)
 
   /* Initialization */
   som_nnet = (SomNNetwork) nnet->extension;
-  som_attr = (SomAttributes) som_nnet->attr;
-  lrate_function = som_attr->lrate_function;
+  /*som_attr = (SomAttributes) som_nnet->attr;*/
+  /*lrate_function = som_attr->lrate_function;*/
   input_dim = nnet->first_layer->nu_units;
   output_dim = nnet->last_layer->nu_units;
 

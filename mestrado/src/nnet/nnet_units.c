@@ -1170,7 +1170,7 @@ nnet_unit_activate (Unit unit, const VectorMetric metric)
   /* If the unit has inputs, collects the activation */
   if (unit->nu_inputs > 0)
     {
-      if (metric == (int) NULL)
+      if (metric == (VectorMetric) NULL)
         exit_status = nnet_unit_collect_activation (unit);
       else
         exit_status = nnet_unit_vector_activation (unit, metric);

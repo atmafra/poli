@@ -339,7 +339,7 @@ nnet_som_ngb_vector (const SomNNetwork som_nnet,
                      const Unit winner_unit, Vector ngb_vector)
 {
   SomAttributes som_attr;       /* SOM attributes */
-  Layer input_layer = NULL;     /* SOM's input layer */
+  /*Layer input_layer = NULL;*/ /* SOM's input layer */
   Layer output_layer = NULL;    /* SOM's output layer */
   Unit cur_unit = NULL;         /* current output unit */
   RValue ngb_value;             /* neighborhood function value */
@@ -367,7 +367,7 @@ nnet_som_ngb_vector (const SomNNetwork som_nnet,
     }
 
   /* Sets the auxiliary pointers */
-  input_layer = som_nnet->nnet->first_layer;
+  /*input_layer = som_nnet->nnet->first_layer;*/
   output_layer = som_nnet->nnet->last_layer;
   som_attr = (SomAttributes) som_nnet->attr;
 

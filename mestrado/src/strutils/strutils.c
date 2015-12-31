@@ -85,8 +85,8 @@ split_file_name (char *file_name, char **directory,
   char c;
   long pos = -1;
   long dot_pos = -1, bar_pos = -1;
-  size_t len;
-  size_t basename_size;
+  size_t len = 0;
+  size_t basename_size = 0;
   int dot_fl = 0, base_fl = 0, bar_fl = 0;
 
 
@@ -166,10 +166,7 @@ split_file_name (char *file_name, char **directory,
         {
           basename_size = len + 1;
         }
-      else
-        {
-          basename_size = 0;
-        }
+
       *basename = (char *) realloc (*basename, basename_size);
     }
 
